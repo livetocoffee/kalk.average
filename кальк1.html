@@ -1,0 +1,573 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="dfd.css">
+<title>Средний балл Аттестата как посчитать, калькулятор аттестата</title>
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<section class="sablon_sirina">
+  
+  <div class="head">
+    <h1 class="zagolovk_h1">Калькулятор среднего балла аттестата</h1>
+    <div class="opisn_sapka">Калькулятор аттестата рассчитывает средний балл аттестата за 9 или 11 класс. Можно изменить список и последовательность предметов</div>
+  </div>
+  
+  <div>
+    <div class="osnvn_sabl_strk">
+      <div class="osnvn_sabl_levo">
+        <div class="krpus_kalkl" id="korp_calc_smenu">          
+          <div class="krpus_kalkl_tabl">
+            <div class="krpus_kalkl_strk">            
+              <div class="krpus_kalkl_levo">
+                <h3 class="zgolv_krpus_atst">Калькулятор аттестата</h3>                <div class="zgolv_krpus_dpln" id="zgolv_dpln"></div><!--#zgolv_krpus_dpln-->                <div      class="blok_menu_prdm_korp" id="blok_prdm_korp">
+                  </div>                <div class="atest_vodoc_blok" id="atst_calc_strk">
+                  <div class="atest_vodoc_tabl">
+                    <div class="atest_vodoc_strk">
+                      <div class="subj_name">Русский язык</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_1">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Литература</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_2">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Родной язык</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_3">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Родная литература</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_4">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Иностранный язык</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_12">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Второй иностранный</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_13">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Математика</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_5">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Информатика</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_11">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">История</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_17">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Обществознание</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_35">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">География</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_9">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Физика</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_6">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Биология</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_8">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Химия</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_7">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Музыка</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_21">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">ИЗО</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_26">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Технология</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_22">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">Физкультура</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_16">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk--><div class="atest_vodoc_strk">
+                      <div class="subj_name">ОБЖ</div>
+                      <div class="mark_selk">
+                        <select class="year_marks" id="prdm_menu_27">
+                          <option value="0" selected>Выберите</option>
+                          <option value="5">5</option>
+                          <option value="4">4</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div><!--.mark_selk-->
+                    </div><!--.atest_vodoc_strk-->
+                  </div><!--.atest_vodoc_tabl-->
+                </div><!--.atest_vodoc_blok-->                <div class="cment_atest_blok" id="cmnt_atst"></div>                <div class="itgov_atest_blok">
+                  <div class="itgov_atest_tabl">
+                    <div class="itgov_atest_strk">
+                      <div class="itgov_atest_levo">Средний балл аттестата:</div><!--.itgov_atest_levo-->
+                      <div class="itgov_atest_itog"><span class="itgov_atest_rzlt" id="itog_rzlt">0</span></div><!--.itgov_atest_itog-->
+                    </div><!--.itgov_atest_strk-->
+                  </div><!--.itgov_atest_tabl-->
+                </div><!--.itgov_atest_blok-->                <div class="shrsb_knopk_blok">
+                  <div class="shrsb_knopk_tabl">
+                    <div class="shrsb_knopk_strn">                      
+                      <div class="shrsb_knopk_shrn"><div class="sohr_knop_itog_koc sohr_knop_itog" id="shran_itgov"></div><!--.sohr_knop_itog--></div><!--.shrsb_knopk_shrn-->                      
+                      <div class="shrsb_knopk_sbrs"><div class="sbrs_knop_itog_koc sbrs_knop_itog" id="sbros_itgov"></div><!--.sbrs_knop_itog--></div><!--.shrsb_knopk_sbrs-->
+                      <div class="shrsb_knopk_copy"><div class="copy_knop_itog_koc copy_knop_itog" id="copir_itgov"></div><!--.copy_knop_itog--></div><!--.shrsb_knopk_copy-->
+                    </div><!--.shrsb_knopk_strn-->
+                  </div><!--.shrsb_knopk_tabl-->
+                    <div class="stats_ocenk_blok" id="socn_blok">
+                    <div id="socn_nstr_stop">
+                      <div class="klich_ocenk_zglv">Количество оценок - <strong class="stats_ocenk_otvt" id="ocen_klch">0</strong> (<span id="ocen_schk">0</span>)</div>
+                      <div>
+                        <span class="stats_ocenk_znch">5 - <strong id="piat_atst" class="stats_ocenk_otvt">0</strong>,</span>
+                        <span class="stats_ocenk_znch">4 - <strong id="chtr_atst" class="stats_ocenk_otvt">0</strong>,</span>
+                        <span class="stats_ocenk_znch">3 - <strong id="ttri_atst" class="stats_ocenk_otvt">0</strong></span>
+                      </div>
+                    </div>
+                  </div><!--.stats_ocenk_blok-->                                              </div><!--.krpus_kalkl_levo-->
+              <div class="krpus_kalkl_srdin"></div><!--.krpus_kalkl_srdin-->
+              <div class="krpus_kalkl_prav"></div>
+                
+                <section id="nstr_calc_smenu">
+                  <div class="menu_kalk_korp">
+                </div><!--.menu_kalk_korp-->                  <div      class="blok_menu_prdm_nstr" id="blok_prdm_nstr">
+                  </div>                  <div class="menu_socn_nstr">
+                    <input type="checkbox" class="chkb_nstr_strk" id="socn_nstr" checked> <label for="socn_nstr" class="labl_nstr_kalk">статистика оценок</label>
+                  </div><!--.menu_socn_nstr-->                  <div class="menu_pnst_korp">
+                    <input type="checkbox" class="chkb_nstr_strk" id="nstr_pksk"> <label for="nstr_pksk" class="labl_nstr_kalk">дополнит. настройки</label>
+                  </div><!--.menu_pnst_korp-->                
+                  <div class="pokaz_skrit_nstr" id="nstr_blok">
+                    <div id="nstr_blok_stop">
+                                          
+                                <div class="menu_dest_korp">
+                        
+                        <input type="checkbox" class="chkb_nstr_strk" id="nuli_dobv"> <label for="nuli_dobv" class="labl_nstr_kalk">добавить нули в итог</label>
+                      </div><!--.menu_dbav_nuli-->                      <div class="menu_okrg_tips">
+                      <div class="prdm_menu_blok">
+                        <div class="">Список предметов</div>
+                        <div class="prdm_rbch_blok" id="aktv_spis_prdm">
+                          <div class="prdm_rbch_tabl">
+                          <div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Русский язык</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_1"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_1"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_1"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Литература</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_2"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_2"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_2"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Родной язык</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_3"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_3"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_3"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Родная литература</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_4"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_4"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_4"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Иностранный язык</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_12"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_12"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_12"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Второй иностранный</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_13"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_13"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_13"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Математика</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_5"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_5"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_5"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Информатика</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_11"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_11"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_11"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">История</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_17"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_17"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_17"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Обществознание</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_35"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_35"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_35"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">География</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_9"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_9"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_9"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Физика</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_6"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_6"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_6"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Биология</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_8"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_8"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_8"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Химия</div><!--.prdm_rbch_nzvn-->  
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_7></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_7"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_7"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Музыка</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_21"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_21"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_21"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">ИЗО</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_26"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_26"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_26"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Технология</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_22"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_22"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_22"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">Физкультура</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_16"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_16"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_16"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk--><div class="prdm_rbch_strk" id="">
+                            <div class="prdm_rbch_nzvn">ОБЖ</div><!--.prdm_rbch_nzvn-->
+                            <div class="prdm_rbch_verh nstr_spis_verh_icon" id="vrh_prd_27"></div><!--.prdm_rbch_verh-->
+                            <div class="prdm_rbch_vniz nstr_spis_nizu_icon" id="niz_prd_27"></div><!--.prdm_rbch_vniz-->
+                            <div class="prdm_rbch_udal nstr_spis_udln_icon" id="udl_prd_27"></div><!--.prdm_rbch_udal-->
+                          </div><!--.prdm_rbch_strk-->
+                          </div><!--.prdm_rbch_tabl-->
+                        </div><!--.prdm_rbch_blok-->
+                        <div class="prdm_skrt_blok" id="skrt_spis_prdm">
+                          <div class="prdm_skrt_tabl">
+                            <div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Основной</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_0"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Естесвознание</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_10"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Алгебра</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_14"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Геометрия</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_15"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Английский</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_18"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Немецкий</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_19"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Французский</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_20"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Экология</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_23"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Астрономия</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_24"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Окруж. мир</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_25"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Краеведение</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_28"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">НВП</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_29"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Родной язык</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_31"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Философия</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_32"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Черчение</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_33"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Риторика</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_34"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">История Росси</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_36"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Всеобщая история</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_37"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                            <div class="prdm_skrt_prdm">Индивидуальный проект</div><!--.prdm_skrt_prdm-->
+                            <div class="prdm_skrt_plus plus_knop_risn" id="dob_prd_38"></div><!--.prdm_skrt_plus-->
+                          </div><!--.prdm_skrt_strk--><div class="prdm_skrt_strk" id="">
+                          </div><!--.prdm_skrt_tabl-->
+                        </div><!--.prdm_skrt_blok-->
+                      </div><!--.prdm_menu_blok-->                                                                                      </div><!--#nstr_blok_stop-->
+                  </div><!--.pokaz_skrit_nstr-->
+                </section>
+                
+              </div><!--.krpus_kalkl_prav-->
+            </div><!--.krpus_kalkl_strk-->
+          </div><!--.krpus_kalkl_tabl-->
+        </div><!--.krpus_kalkl-->
+        
+        
+      </div><!--.osnvn_sabl_levo-->
+    </div><!--.osnvn_sabl_strk-->
+  </div><!--.osnvn_sabl_tabl-->
+  
+  
+
+
+
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+
+<div>
+  <section class="year_mark">
+      <div>1 четверть (триместр)</div>
+        <select class="year_marks" name="furst_turm">
+        <option value="0" selected>Выберите</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+      </select>
+  </section>
+</div>
+
+<div class="year_mark">
+  <section>
+    <div>2 четверть (триместр)</div>
+      <select class="year_marks" name="second_turm">
+        <option value="0" selected>Выберите</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+      </select>
+  </section>
+</div>
+
+<div class="year_mark">
+  <section>
+    <div>3 четверть (триместр)</div>
+      <select class="year_marks" name="third_turm">
+        <option value="0" selected>Выберите</option>
+        <option value="5.5">5</option>
+        <option value="4.4">4</option>
+        <option value="3.3">3</option>
+      </select>
+  </section>
+</div>
+
+<div class="year_mark">
+<section>
+  <div>4 четверть</div>
+    <select class="year_marks" name="fourth_turm">
+      <option value="0" selected>Выберите</option>
+      <option value="5.5">5</option>
+      <option value="4.4">4</option>
+      <option value="3.3">3</option>
+    </select>
+</section>
+</div>
+
+<div class="year_mark">
+<section>
+  <div>Оценка за экзамен</div>
+    <select class="year_marks" name="exam">
+      <option value="0" selected>Выберите</option>
+      <option value="5.5">5</option>
+      <option value="4.4">4</option>
+      <option value="3.3">3</option>
+    </select>
+</section>
+</div>
+
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+
+  <div class="insrt_calc_tabl" id="inst_calc_smenu">
+    <div class="insrt_calc_strk">
+      <div class="insrt_calc_levo">        
+        <div class="insrt_calc_text">
+          
+            <section class="insrt_calc_pdbl" id="psch_srdb_smenu">
+              <h3 class="insrt_calc_szgl">Как посчитать средний балл аттестата</h3>
+              
+              <p class="insrt_calc_abzc">
+                Средний балл аттестата - это среднее арифметическое значение от всех оценок ученика. 
+                Чтобы посчитать средний балл аттестата, нужно сложить оценки по всем предметам и разделить полученную сумму на общее количество предметов, по которым были выставлены оценки. 
+                Этот способ применим как к 9 классу, так и к 11 классу. При этом не стоит учитывать полугодовые, четвертные и другие промежуточные оценки.<br>
+                Калькулятор позволяет считать средний балл аттестата отдельно для 9 или 11 класса. Данные вычислений сохраняются в памяти.
+              </p>              
+            </section>
+            
+            <section class="insrt_calc_pdbl">
+              <h4 class="insrt_calc_szgl">Дополнительные результаты</h4>
+              
+              <strong class="insrt_calc_szgl_abzc">Статистика оценок</strong>
+              <p class="insrt_calc_abzc">
+                Показывает количество предметов, по которым выбрана оценка и общее количество предметов.<br>
+                Дополнительно подсчитывается количество пятерок, четверок и троек.
+              </p>              
+            </section>            
+          
+            <section class="insrt_calc_pdbl">
+              <h4 class="insrt_calc_szgl">Настройки калькулятора</h4>
+              
+              <strong class="insrt_calc_szgl_abzc">Список предметов</strong>
+              <p class="insrt_calc_abzc">
+                Список предметов аттестата может редактироваться. Вы можете добавить/удалить предметы из общего списка, изменить порядок следования.
+              </p>
+              
+              <strong class="insrt_calc_szgl_abzc">Предупреждения</strong>
+              <p class="insrt_calc_abzc">
+                Калькулятор правильно подсчитает средний балл аттестата только при условии, что выбраны оценки по всем предметам. 
+                Иначе будет отображаться предупреждающее сообщение. 
+              </p>
+              
+              <strong class="insrt_calc_szgl_abzc">Количество десятичных знаков</strong>
+                <p class="insrt_calc_abzc">Можно изменить количество десятичных знаков после запятой. Значение по умолчанию - 2 знака, однако можно изменить на любое удобное значение от 0 до 4.</p>
+                
+                <strong class="insrt_calc_szgl_abzc">Добавить нули</strong>
+                <p class="insrt_calc_abzc">Калькулятор позволяет добавить нули в десятичной части среднего балла до нужного количества.</p>
+                
+                <strong class="insrt_calc_szgl_abzc">Округление</strong>
+                <p class="insrt_calc_abzc">Вариант округления: к ближайшему целому, в большую сторону, в меньшую сторону. По умолчанию установлено округление среднего балла к ближайшему целому.</p>
+                
+                
+                <strong class="insrt_calc_szgl_abzc">Копирование результата</strong>
+                <p class="insrt_calc_abzc">При нажитии на кнопку "Копирвать" или клике на цифровой итог среднего балла подробный результат вычислений копируется в буфер обмена в виде текста.</p>
+            </section>
+          
+        </div><!--.insrt_calc_text-->        
+      </div><!--.insrt_calc_levo-->
+    </div><!--.insrt_calc_strk-->
+  </div><!--.insrt_calc_tabl-->
+  
+  
+</section>
+
+</body>
+</html>
