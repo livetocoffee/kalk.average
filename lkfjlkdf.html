@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="dfd.css">-->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+
+
+    <div class="head">
+        <h1 class="zagolovk_h1">Калькулятор среднего балла аттестата</h1>
+        <div class="opisn_sapka">Калькулятор аттестата рассчитывает средний балл аттестата за 9 или 11 класс. Можно изменить список и последовательность предметов</div>
+    </div>
+
+<div class="tabl">
+    <div class="container">
+        <div class="box">
+            <div>Русский язык</div> 
+            <div class="input" contentEditable=true><input id="m1" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Литература</div>
+            <div class="input"><input id="m2" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Родной язык</div>
+            <div class="input"><input id="m3" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Родная литература</div>
+            <div><input id="m4" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Математика</div>
+            <div><input id="m5" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Физика</div>
+            <div><input id="m6" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Химия</div>
+            <div><input id="m7" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Биология</div>
+            <div><input id="m8" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>География</div>
+            <div><input id="m9" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Естествознание</div>
+            <div><input id="m10" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Информатика</div>
+            <div><input id="m11" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Иностранный язык</div>
+            <div><input id="m12" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Второй иностранный язык</div>
+            <div><input id="m13" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Алгебра</div>
+            <div><input id="m14" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Геометрия</div>
+            <div><input id="m15" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Физкультура</div>
+            <div><input id="m16" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>История</div>
+            <div><input id="m17" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Английский</div>
+            <div><input id="m18" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Немецкий</div>
+            <div><input id="m19" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Французский</div>
+            <div><input id="m20" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Музыка</div>
+            <div><input id="m21" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">       
+            <div>Технология</div>
+            <div><input id="m22" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>ИЗО</div>
+            <div><input id="m23" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Экология</div>
+            <div><input id="m24" type="text" inputmode="numeric" value="" maxlength="1"></div></div>
+        </div>
+        <div class="container">
+            <div class="box">
+            <div>Астрономия</div>
+            <div><input id="m25" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Функциональная грамотность</div>
+            <div><input id="m26" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>ОБиЗР</div>
+            <div><input id="m27" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Краеведение</div>
+            <div><input id="m28" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>НВП</div>
+            <div><input id="m29" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Вероятность и статистика</div>
+            <div><input id="m30" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Семьеведение</div>
+            <div><input id="m31" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Философия</div>
+            <div><input id="m32" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Черчение</div>
+            <div><input id="m33" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Риторика</div>
+            <div><input id="m34" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Обществознание</div>
+            <div><input id="m35" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>История России</div>
+            <div><input id="m36" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Всеобщая история</div>
+            <div><input id="m37" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Индивидуальный проект</div>
+            <div><input id="m38" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Природоведение</div>
+            <div><input id="m39" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Экономика</div>
+            <div><input id="m40" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Право</div>
+            <div><input id="m41" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>ОРКСЭ</div>
+            <div><input id="m42" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>ОДНКНР</div>
+            <div><input id="m43" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Мировая Художественная Культура</div>
+            <div><input id="m44" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div>Разговоры о важном</div>
+            <div><input id="m45" type="text" inputmode="numeric" value="" maxlength="1"></div>
+        </div>
+    </div>
+</div>
+
+
+
+        <button id="count" class="count">рассчитать</button>
+        <br>
+
+        <py-config>
+            packages = ["pyscript"]
+        </py-config>
+
+        <py-script>
+        from pyscript import when
+        from pyscript import Element
+        
+        @when("click", selector="#count")
+        def count(event):
+            text1 = Element('m1').element.value
+            text2 = Element('m2').element.value
+            text3 = Element('m3').element.value
+            text4 = Element('m4').element.value
+                <!--text5 = Element('m5').element.value
+                text6 = Element('m6').element.value
+                text7 = Element('m7').element.value
+                text8 = Element('m8').element.value
+                text9 = Element('m9').element.value
+                text10 = Element('m10').element.value
+                text11 = Element('m11').element.value
+                text12 = Element('m12').element.value
+                text13 = Element('m13').element.value
+                text14 = Element('m14').element.value
+                text15 = Element('m15').element.value
+                text16 = Element('m16').element.value
+                text17 = Element('m17').element.value
+                text18 = Element('m18').element.value
+                text19 = Element('m19').element.value
+                text20 = Element('m20').element.value
+                text21 = Element('m21').element.value
+                text22 = Element('m22').element.value
+                text23 = Element('m23').element.value
+                text24 = Element('m24').element.value
+                text25 = Element('m25').element.value
+                text26 = Element('m26').element.value
+                text27 = Element('m27').element.value
+                text28 = Element('m28').element.value
+                text29 = Element('m29').element.value
+                text30 = Element('m30').element.value
+                text31 = Element('m31').element.value
+                text32 = Element('m32').element.value
+                text33 = Element('m33').element.value
+                text34 = Element('m34').element.value
+                text35 = Element('m35').element.value
+                text36 = Element('m36').element.value
+                text37 = Element('m37').element.value
+                text38 = Element('m38').element.value
+                text39 = Element('m39').element.value
+                text40 = Element('m40').element.value
+                text41 = Element('m41').element.value
+                text42 = Element('m42').element.value
+                text43 = Element('m43').element.value
+                text44 = Element('m44').element.value
+                text45 = Element('m45').element.value-->
+
+            text_1 = int(text1)
+            text_2 = int(text2)
+            text_3 = int(text3)
+            text_4 = int(text4)
+                <!--text_5 = int(text5)
+                text_6 = int(text6)
+                text_7 = int(text7)
+                text_8 = int(text8)
+                text_9 = int(text9)
+                text_10 = int(text10)
+                text_11 = int(text11)
+                text_12 = int(text12)
+                text_13 = int(text13)
+                text_14 = int(text14)
+                text_15 = int(text15)
+                text_16 = int(text16)
+                text_17 = int(text17)
+                text_18 = int(text18)
+                text_19 = int(text19)
+                text_20 = int(text20)
+                text_21 = int(text21)
+                text_22 = int(text22)
+                text_23 = int(text23)
+                text_24 = int(text24)
+                text_25 = int(text25)
+                text_26 = int(text26)
+                text_27 = int(text27)
+                text_28 = int(text28)
+                text_29 = int(text29)
+                text_30 = int(text30)
+                text_31 = int(text31)
+                text_32 = int(text32)
+                text_33 = int(text33)
+                text_34 = int(text34)
+                text_35 = int(text35)
+                text_36 = int(text36)
+                text_37 = int(text37)
+                text_38 = int(text38)
+                text_39 = int(text39)
+                text_40 = int(text40)
+                text_41 = int(text41)
+                text_42 = int(text42)
+                text_43 = int(text43)
+                text_44 = int(text44)
+                text_45 = int(text45)-->
+
+            marks = list()
+            marks.append(text_1)
+            marks.append(text_2)
+            marks.append(text_3)
+            marks.append(text_4)
+                <!--marks.append(text_5)
+                marks.append(text_6)
+                marks.append(text_7)
+                marks.append(text_8)
+                marks.append(text_9)
+                marks.append(text_10)
+                marks.append(text_11)
+                marks.append(text_12)
+                marks.append(text_13)
+                marks.append(text_14)
+                marks.append(text_15)
+                marks.append(text_16)
+                marks.append(text_17)
+                marks.append(text_18)
+                marks.append(text_19)
+                marks.append(text_20)
+                marks.append(text_21)
+                marks.append(text_22)
+                marks.append(text_23)
+                marks.append(text_24)
+                marks.append(text_25)
+                marks.append(text_26)
+                marks.append(text_27)
+                marks.append(text_28)
+                marks.append(text_29)
+                marks.append(text_30)
+                marks.append(text_31)
+                marks.append(text_32)
+                marks.append(text_33)
+                marks.append(text_34)
+                marks.append(text_35)
+                marks.append(text_36)
+                marks.append(text_37)
+                marks.append(text_38)
+                marks.append(text_39)
+                marks.append(text_40)
+                marks.append(text_41)
+                marks.append(text_42)
+                marks.append(text_43)
+                marks.append(text_44)
+                marks.append(text_45)
+                
+
+                <!--marks.sort()
+
+                while 0 in marks 
+                    marks.remove(0)-->
+                
+            average = sum(marks) / len(marks)
+
+            print(average) 
+            
+        <!--e = document.getElementById("count")
+        add_event_listener(e ,"click" ,count )-->
+            
+
+        </py-script>
+
+</body>
+</html>
